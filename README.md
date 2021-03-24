@@ -16,7 +16,7 @@ Final Project for UC Berkeley Bootcamp. This is a Social Media App for the up an
 
 - [User Story](#userStory)
 
-- [Liscense](#license)
+- [License](#license)
 
 - [Contributors](#contributors)
 
