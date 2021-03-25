@@ -8,7 +8,7 @@ function Details(props) {
                 <img src={props.song.img_src} alt="" />
             </div>
             <h4 className="details-title">{props.song.title}</h4>
-            <h4 className="detils-artist">{props.song.artist}</h4>
+            <h4 className="details-artist">{props.song.artist}</h4>
         </div>
 
     )

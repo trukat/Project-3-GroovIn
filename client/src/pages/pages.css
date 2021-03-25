@@ -116,15 +116,17 @@
 
 
 .aboutMe {
-  background-color:#4C5450 ;
+  background-color: #747560;
   float: left;
-  height: 88vh;
+  height: 58vh;
   grid-area: menu;
-  
+  border-radius: 12px;
 }
+
+
 .postContainer {
   background-attachment: fixed;
-  background-image: url('../Images/Back2.jpeg');
+  background-image: url('../Images/elliott-lowe-fQQBArliXGE-unsplash.jpg');
   grid-area: main;
   position: flex;
   color:grey;
