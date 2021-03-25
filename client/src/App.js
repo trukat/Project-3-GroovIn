@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Profile from "./pages/Profile";
 import ConfirmedAccount from "./pages/ConfirmedAccount";
 import Footer from './components/Footer';
+// import Player from './components/Music/Player';
 
 
 function App() {
@@ -49,7 +50,7 @@ function App() {
 
   return (
     <div className="App">
-      
+
       <Router>
         <Navbar props={userData.user} logout={logOut} />
 
@@ -61,6 +62,7 @@ function App() {
             <Route path="/confirm" component={Confirm} />
             <Route path="/confirm_token/:token" component={ConfirmedAccount} />
             <Route path="/" component={Home} />
+            {/* <Route path="/Player" component={Player} /> */}
             <Route path="/Footer" component={Footer} />
           </Switch>
         </UserContext.Provider>

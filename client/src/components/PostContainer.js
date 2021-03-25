@@ -30,6 +30,11 @@ const PostContainer = () => {
       await axios.delete("/post", {
         headers: { "x-auth-token": localStorage.getItem("auth-token") },
       });
+      let userPosts = await axios.get("/post", {
+        headers: { "x-auth-token": localStorage.getItem("auth-token") },
+      });
+      let post = userPosts.data;
+      setPost([...post]);
     } catch (err) {
       console.log(err);
     }
@@ -93,12 +98,12 @@ const PostContainer = () => {
             <h3>{post.title}</h3>
             <p>{post.text}</p>
             <form onClick={(e) => updatePost(e)}>
-              <label>Title:</label>
+              <label>Name:</label>
               <input onChange={onChange} type="text" name="title" />
-              <label>Text:</label>
+              <label>Looking:</label>
               <input onChange={onChange} type="text" name="text" />
               <button value={index} type="submit">
-                Submit
+                Edit
               </button>
             </form>
             {/* <button onClick={updatePost}>Update</button> */}

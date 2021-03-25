@@ -6,6 +6,7 @@ import { useHistory } from "react-router-dom";
 import axios from "axios";
 import "./pages.css";
 import Upload from "./Upload";
+// import Player from './components/Music/Player';
 
 const Profile = (props) => {
   const { userData } = useContext(UserContext);
@@ -50,6 +51,7 @@ const Profile = (props) => {
         <h1>
           {userData.user?.firstName} {userData.user?.lastName}
         </h1>
+        <Upload />
       </div>
       <div className="aboutMe">
         <h2>AboutMe</h2>
@@ -59,10 +61,10 @@ const Profile = (props) => {
         <PostContainer />
       </div>
       <div className="allPost">
-        <h2>Upcoming Events Near You</h2>
+        <div className="titleEvents">Upcoming Events Near You, Discover the next concer near where you live blha bkaasjdbajhsdbajsdbashjdbashdahsdashdakjshdashdjkashdjkhh</div>
         {events.map((item, index) => (
-          <div key={index}>
-            <p> {item.title} </p>
+          <div className="allPostGrid" key={index}>
+            <h3> {item.title} </h3>
             <p>
               {item.datetime_tbd
                 ? "TBD"
