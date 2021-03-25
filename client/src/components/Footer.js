@@ -9,17 +9,17 @@ function Footer() {
       <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
-            <h2>About Us</h2>
+            <h3>About Us</h3>
             <a
-              href="https://github.com/Frank-5850/Project3-2.0"
+              href="https://github.com/trukat/Project-3-GroovIn"
               target="_blank"
               rel="noreferrer"
             >
-              How it works
+              How It Works
             </a>
           </div>
           <div className="footer-link-items">
-            <h2>Team</h2>
+            <h3>Team</h3>
             <a
               href="https://github.com/Sudan20215"
               target="_blank"
@@ -55,7 +55,7 @@ function Footer() {
         </div>
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
-            <h2>UC Berkeley Extension</h2>
+            <h3>UCB Extension</h3>
             <a
               href="https://extension.berkeley.edu/publicViewHome.do?method=load&b_source=google&b_medium=cpc&b_campaign=7282495872&b_adgroup=80171951946&b_keyword=%2Bberkeley%20%2Bcontinuing%20%2Beducation&b_matchtype=b&b_gclid=Cj0KCQjwo-aCBhC-ARIsAAkNQisRDWPgg_KZPs1V_0Dl_SPpK7RROJCiYREkY49lR6jW88VVadH5qvIaArseEALw_wcB&b_device=c-&b_position=&b_adid=391646265564&b_placement=&b_random=307864989248245766&gclid=Cj0KCQjwo-aCBhC-ARIsAAkNQisRDWPgg_KZPs1V_0Dl_SPpK7RROJCiYREkY49lR6jW88VVadH5qvIaArseEALw_wcB"
               target="_blank"
@@ -64,10 +64,12 @@ function Footer() {
               Bootcamp
             </a>
           </div>
+          </div>
+          <div className="footer-link-wrapper">
           <div className="footer-link-items">
-            <h2>Social Media</h2>
+            <h3>Social Media</h3>
             <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
-              Youtube
+              YouTube
             </a>
             <a
               href="https://www.spotify.com/us/"
@@ -81,9 +83,9 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              Itunes
+              iTunes
             </a>
-          </div>
+        </div>
         </div>
       </div>
       <section className="social-media">
