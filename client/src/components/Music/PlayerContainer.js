@@ -33,7 +33,7 @@ function PlayerContainer(props) {
     }, [currentSongIndex]);
 
     return (
-        <div className="App">
+        <div className="Player">
             <Player
                 currentSongIndex={currentSongIndex}
                 setCurrentSongIndex={setCurrentSongIndex}

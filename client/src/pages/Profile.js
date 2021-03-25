@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 import axios from "axios";
 import "./pages.css";
 import Upload from "./Upload";
-// import Player from './components/Music/Player';
+import PlayerContainer from '../components/Music/PlayerContainer';
 
 const Profile = (props) => {
   const { userData } = useContext(UserContext);
@@ -55,6 +55,7 @@ const Profile = (props) => {
       </div>
       <div className="aboutMe">
         <h2>AboutMe</h2>
+        <PlayerContainer />
       </div>
       <div className="postContainer">
         <h2>Network</h2>
