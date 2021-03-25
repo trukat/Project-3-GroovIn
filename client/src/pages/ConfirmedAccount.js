@@ -19,7 +19,7 @@ const ConfirmedAccount = (props) => {
         <h1 className="confirmHeader">Congratulations!</h1>
         <br />
         <h3>
-          You have successfully confirmed your Account! You make now log in!
+          You have successfully confirmed your Account! You may now log in!
         </h3>
       </div>
     </div>
