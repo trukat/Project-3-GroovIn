@@ -5,7 +5,6 @@ import moment from "moment";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 import "./pages.css";
-import Upload from "./Upload";
 import PlayerContainer from '../components/Music/PlayerContainer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import FileUpload from "../components/FileUpload";
