@@ -52,7 +52,7 @@ const Profile = (props) => {
         <h1>
           {userData.user?.firstName} {userData.user?.lastName}
         </h1>
-        <h2>About me.</h2>
+        <h2>About</h2>
         <FileUpload/>
         {/* <img src="./Images/Profile1.png" /> */}
         <div>Singer/Pianist/Music Producer</div>
@@ -62,7 +62,6 @@ const Profile = (props) => {
         <i className="fab fa-map-market-alt" />
         <i className="fab fa-soundcloud" />
         <i className="fab fa-youtube" />
-        <i className="fab fa-soundcloud" />
         <i className="fab fa-itunes-note" />
         <i className="fab fa-spotify" />
       </div>
