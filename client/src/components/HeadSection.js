@@ -7,7 +7,7 @@ function HeadSection() {
     <div className='Head-container'>
       <video src="/Video/Video-1.mp4" autoPlay loop muted />
 
-      <p>Social Media for the Local Musician</p>
+      <h3>Social Media for the Local Musician</h3>
 
     </div >
   );

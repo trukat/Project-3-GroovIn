@@ -2,12 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 90vh;
   }
   
   .c-player {
     display: block;
-    background-color: #313131;
+    background-color:transparent;
     display: block;
     margin: 0px auto;
     padding: 50px;
@@ -16,7 +16,7 @@
   }
   
   .c-player > h4 {
-    color: #FFF;
+    color:mediumaquamarine;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 500;
@@ -92,8 +92,8 @@
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), -4px -4px 10px rgba(255, 255, 255, 0.4), inset -4px -4px 10px rgba(0, 0, 0, 0.4), inset 4px 4px 10px rgba(255, 255, 255, 0.4);
     border: none;
     outline: none;
-    background-color: #FFCE00;
-    color: #FFF;
+    background-color:transparent;
+    color: #black;
     font-size: 24px;
     cursor: pointer;
   }
@@ -104,5 +104,5 @@
     outline: none;
     cursor: pointer;
     color: #888;
-    font-size: 18px;
+    font-size: 20px;
   }

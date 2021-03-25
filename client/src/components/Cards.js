@@ -11,8 +11,8 @@ function Cards() {
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-sm-6'>
-                        <h3>Vision:</h3>
-                        <p>Create opportunities and build connections by bringing talent together in your local area.</p>
+                        <h1>Vision</h1>
+                        <h4>Create opportunities and build connections by bringing talent together in your local area.</h4>
                         <CardItem
                             src='Images/F1.gif'
                         />
@@ -22,8 +22,8 @@ function Cards() {
                         <CardItem
                             src='Images/F2.gif'
                         />
-                        <h3>Features:</h3>
-                        <p>Music, Networking, Local Events & More</p>
+                        <h1>Features</h1>
+                        <h4>Music, Networking, Local Events & More</h4>
                     </div>
                 </div>
             </div>
