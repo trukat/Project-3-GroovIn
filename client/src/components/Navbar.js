@@ -19,9 +19,13 @@ const Navbar = (props) => {
       return (
         <nav className="navbar">
           <div className="navbar-container">
+
             <Link to="/" className="navbar-logo">
-              GroovIn
-              <i className="fas fa-record-vinyl" />
+              <div className="vinyl-wrapper">
+                <div className="vinyl">
+                  <div className="record-sleeve">
+                    <h1 className="GroovIn">GroovIn</h1>
+                  </div></div></div>
             </Link>
             <div className="menu-icon" onClick={handleClick}>
               <i className={click ? "fas fa-record-vinyl" : "fas fa-bars"} />
@@ -44,7 +48,7 @@ const Navbar = (props) => {
         <nav className="navbar">
           <div className="navbar-container">
             <Link to="/" className="navbar-logo">
-              GroovIn
+              GrooveIn
               <i className="fas fa-record-vinyl" />
             </Link>
             <div className="menu-icon" onClick={handleClick}>

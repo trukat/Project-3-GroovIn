@@ -11,11 +11,11 @@ function Footer() {
           <div className="footer-link-items">
             <h2>About Us</h2>
             <a
-              href="https://github.com/trukat/Project-3-GroovIn"
+              href="https://github.com/Frank-5850/Project3-2.0"
               target="_blank"
               rel="noreferrer"
             >
-              How It Works
+              How it works
             </a>
           </div>
           <div className="footer-link-items">

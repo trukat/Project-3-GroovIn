@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Frank-5850/Project3-2.0#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bcryptjs": "^2.4.3",
     "concurrently": "^6.0.0",
     "cors": "^2.8.5",

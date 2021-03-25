@@ -1,4 +1,4 @@
-# GroovIn
+# GrooveIn
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -16,7 +16,7 @@ Final Project for UC Berkeley Bootcamp. This is a Social Media App for the up an
 
 - [User Story](#userStory)
 
-- [License](#license)
+- [Liscense](#license)
 
 - [Contributors](#contributors)
 
