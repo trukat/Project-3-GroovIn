@@ -54,7 +54,6 @@ const Profile = (props) => {
         <Upload />
       </div>
       <div className="aboutMe">
-        <h2>AboutMe</h2>
         <PlayerContainer />
       </div>
       <div className="postContainer">
