@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import '../components/PostContainer.css'
 
 const PostContainer = () => {
   const [form, setForm] = useState({ title: "", text: "" });
@@ -85,22 +86,22 @@ const PostContainer = () => {
   return (
     <div>
       <form onSubmit={submitPost}>
-        <label>Title:</label>
+        <label className="TitlesBox">Title:</label>
         <input onChange={onChange} type="text" name="title" />
-        <label>Text:</label>
+        <label className="TextBox">Text:</label>
         <input onChange={onChange} type="text" name="text" />
         <button type="submit">Submit</button>
       </form>
 
-      <div className="allPost">
+      <div className="Box">
         {post.map((post, index) => (
           <div key={index}>
             <h3>{post.title}</h3>
             <p>{post.text}</p>
             <form onClick={(e) => updatePost(e)}>
-              <label>Name:</label>
+              <label className="userName">Name:</label>
               <input onChange={onChange} type="text" name="title" />
-              <label>Looking:</label>
+              <label className="Desc">Desciption:</label>
               <input onChange={onChange} type="text" name="text" />
               <button value={index} type="submit">
                 Edit

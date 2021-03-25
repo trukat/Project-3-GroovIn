@@ -1,0 +1,30 @@
+
+
+.postContainer {
+    grid-area: main;
+    height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 78vw;
+}
+
+
+
+
+.TitlesBox, .TextBox, .userName, .Desc, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aquamarine;
+    font-size: 100%;
+}
+
+
+
+.userName {
+
+}
+
+.Desc {
+
+}

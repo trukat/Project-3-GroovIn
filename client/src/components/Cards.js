@@ -13,25 +13,12 @@ function Cards() {
                     <ul className='cards__items'>
                         <CardItem
                             src='Images/F1.gif'
-                            text='About GroovIn 
-                            Vision
-                            Create economic opportunity for every member of the global workforce.
-                            Mission
-                            The mission of GroovIn is simple: 
-                            connect the world’s professional Musicians to make them 
-                            more productive and successful.
-                            Who are we?
-                            Blah blah.
-                            
-                            '
-                            path='/Register'
                         />
+                        <div className='TextAbout'>dasda</div>
                         <CardItem
                             src='Images/F2.gif'
-                            text='Featured Playlist, Network, Concert near you,
-                            music & More'
-                            path='/Register'
                         />
+                        <div className='TextAbout'>sdhad</div>
                     </ul>
                 </div>
             </div>
