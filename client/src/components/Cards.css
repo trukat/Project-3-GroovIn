@@ -30,8 +30,8 @@
     background-color: white;
     flex-flow: column;
     align-items: center;
-    /* width: 100%; */
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
   }
   
   .row {
