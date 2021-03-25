@@ -48,7 +48,7 @@ const Navbar = (props) => {
         <nav className="navbar">
           <div className="navbar-container">
             <Link to="/" className="navbar-logo">
-              GrooveIn
+              GroovIn
               <i className="fas fa-record-vinyl" />
             </Link>
             <div className="menu-icon" onClick={handleClick}>
