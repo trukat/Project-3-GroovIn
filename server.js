@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const fileUpload = require ('express-fileupload')
 const path = require("path");
 const cors = require("cors");
 const PORT = process.env.PORT || 5000;
@@ -9,6 +10,22 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
+
+app.use(fileUpload());
+app.post('/api/upload',(req,res)=>{
+    console.log('hello')
+  if(req.files===null){
+    return res.status(400).json({msg:'No file uploaded'})
+  }
+  const file=req.files.file;
+  file.mv(`${__dirname}/client/public/uploads/${file.name}`,err=>{
+    if(err){
+      console.log(err)
+      return res.status(500).send(err)
+    }
+    res.json({fileName:file.name,filePath:`/uploads/${file.name}`})
+  })
+  })
 
 mongoose.connect(
   process.env.MONGO_URI || "mongodb://localhost/GrooveIn",
