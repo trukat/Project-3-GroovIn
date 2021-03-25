@@ -34,7 +34,7 @@ const onSubmit=async e=>{
         })
 const {fileName,filePath}=res.data;
 setUploadedFile({fileName,filePath});
-setMessage('File Uploaded')
+setMessage('Your File has been Uploaded and We are working hard so that everyone see you post.For certain period of time it has been saved in our system only!!!sorry')
     }catch(err){
         setMessage('No file selected')
 if(err.response.status===500){
