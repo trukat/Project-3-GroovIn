@@ -77,7 +77,7 @@ const Profile = (props) => {
       <div className="allPost">
         {events.map((item, index) => (
           <div className="allPostGrid" key={index}>
-            <h2> {item.title} </h2>
+            <h3> {item.title} </h3>
             <FontAwesomeIcon /> <i className="fas fa-guitar" />
             <p>
               {item.datetime_tbd
