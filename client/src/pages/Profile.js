@@ -8,6 +8,7 @@ import "./pages.css";
 import Upload from "./Upload";
 import PlayerContainer from '../components/Music/PlayerContainer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import FileUpload from "../components/FileUpload";
 
 const Profile = (props) => {
   const { userData } = useContext(UserContext);
@@ -53,7 +54,8 @@ const Profile = (props) => {
           {userData.user?.firstName} {userData.user?.lastName}
         </h1>
         <h2>About me.</h2>
-        <img src="./Images/Profile1.png" />
+        <FileUpload/>
+        {/* <img src="./Images/Profile1.png" /> */}
         <div>Singer/Pianist/Music Producer</div>
         <hr></hr>
         <div>Contacts</div>
