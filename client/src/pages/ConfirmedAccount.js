@@ -8,7 +8,8 @@ const ConfirmedAccount = (props) => {
     (async () => {
       try {
         await axios.post("/confirmation", { token: props.match.params.token });
-        history.push("/confirm_token/:token");
+        //history.push("/confirm_token/:token");
+        history.push(`/confirm_token/${props.match.params.token}`);
       } catch (err) {}
     })();
   }, [history, props.match.params.token]);
