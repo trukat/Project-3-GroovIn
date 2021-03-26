@@ -28,7 +28,7 @@ app.post('/api/upload',(req,res)=>{
   })
 
   mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://localhost/GroovIn',
+    process.env.MONGODB_URI || 'mongodb://localhost/GrooveIn',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
