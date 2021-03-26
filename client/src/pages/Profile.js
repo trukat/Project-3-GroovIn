@@ -8,7 +8,7 @@ import "./pages.css";
 import PlayerContainer from "../components/Music/PlayerContainer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FileUpload from "../components/FileUpload";
-
+clea
 const Profile = (props) => {
   const { userData } = useContext(UserContext);
   const history = useHistory();

@@ -70,7 +70,6 @@ module.exports = {
           console.log(err);
         } else {
           console.log(
-            // `Email was sent with: http://localhost:3000/confirm_token/${confirmationToken.token} `
             `Email was sent with ${process.env.NODE_ENV === "production" ? "https://groovin-project-3.herokuapp.com" : "http://localhost:3000"}/confirm_token/${confirmationToken.token}`
           );
         }
