@@ -34,9 +34,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/GrooveIn", {
   useFindAndModify: false,
 });
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static("client/build"));
+// }
 
 // custom routes
 app.use("/user", require("./routes/userRoutes"));
