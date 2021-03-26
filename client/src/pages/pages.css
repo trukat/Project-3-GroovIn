@@ -6,13 +6,11 @@
   min-height: 100vh;
   background: #eceffc;
 }
-
 .confirmHeader {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .confirmForm {
   display: flex;
   flex-direction: column;
@@ -27,7 +25,6 @@
     0 4.4px 4.4px rgba(128, 128, 128, 0.241),
     0 12px 12px rgba(128, 128, 128, 0.35);
 }
-
 /* Login page css */
 .loginBody {
   color: black;
@@ -45,7 +42,6 @@
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
 }
-
 .loginForm {
   display: flex;
   flex-direction: column;
@@ -60,13 +56,11 @@
     0 4.4px 4.4px rgba(128, 128, 128, 0.241),
     0 12px 12px rgba(128, 128, 128, 0.35);
 }
-
 .loginHeader {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 /* Register Page css */
 .registerBody {
   display: flex;
@@ -81,7 +75,6 @@
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
 }
-
 .registerForm {
   display: flex;
   flex-direction: column;
@@ -96,13 +89,11 @@
     0 4.4px 4.4px rgba(128, 128, 128, 0.241),
     0 12px 12px rgba(128, 128, 128, 0.35);
 }
-
 .registerHeader {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 /* Profile Page Css*/
 .profileHeader {
   background-color:transparent;
@@ -113,8 +104,6 @@
 .profileHeader h1 {
   font-family: 'Righteous', cursive;
 }
-
-
 .aboutMe {
   background-color: #747560;
   float: left;
@@ -122,8 +111,6 @@
   grid-column: 1;
   border-radius: 12px;
 }
-
-
 .postContainer {
   background-attachment: fixed;
   background-image: url('../Images/elliott-lowe-fQQBArliXGE-unsplash.jpg');
@@ -131,13 +118,9 @@
   position: flex;
   color:grey;
 }
-
 .postContainer h1 {
   font-size: 90px;
 }
-
-
-
 .allPost {
   background-color:black;
   padding-top: 6%;
@@ -149,14 +132,10 @@
   display: flex;
   flex-flow: row-reverse wrap;
 }
-
 .allPostGrid {
     position: relative;
     width: 50%;
   }
-  
-
-
 .grid-container {
   color:black;
   display: grid;
@@ -168,15 +147,11 @@
   background:white;
   padding: 10px;
 }
-
 .grid-container > div {
-  
   text-align: center;
   font-family: 'Righteous', cursive;
   border: thick;
-  
 } 
-
 .titleEvents {
   align-items: center;
   color: white;
