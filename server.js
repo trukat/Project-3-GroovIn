@@ -27,19 +27,15 @@ app.post('/api/upload',(req,res)=>{
   })
   })
 
-mongoose.connect(
-  process.env.MONGO_URI || "mongodb://localhost/GrooveIn",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: true,
-  },
-  (err) => {
-    if (err) throw err;
-    console.log("connected to mongodb");
-  }
-);
+  mongoose.connect(
+    process.env.MONGODB_URI || 'mongodb://localhost/GroovIn',
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false
+    }
+  );
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
