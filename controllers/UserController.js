@@ -8,6 +8,10 @@ const nodemailer = require("nodemailer");
 
 module.exports = {
   register: async (req, res) => {
+    let confirmText = `Click to confirm http://localhost:3000/confirm_token`
+    if (process.env.NODE_ENV === "production") {
+      confirmText = `Click to confirm https://groovin-project-3.herokuapp.com/confirm_token`
+    }
     try {
       const { firstName, lastName, email, password, passwordCheck } = req.body;
 
@@ -58,7 +62,7 @@ module.exports = {
         from: "GrooveIn2021@gmail.com",
         to: newUser.email,
         subject: "Thank you for signing up",
-        text: `Click to confirm http://localhost:3000/confirm_token/${confirmationToken.token}`,
+        text: `${confirmText}/${confirmationToken.token}`
       };
 
       transporter.sendMail(mailOption, (err, info) => {
@@ -66,7 +70,8 @@ module.exports = {
           console.log(err);
         } else {
           console.log(
-            `Email was sent with: http://localhost:3000/confirm_token/${confirmationToken.token} `
+            // `Email was sent with: http://localhost:3000/confirm_token/${confirmationToken.token} `
+            `Email was sent with ${process.env.NODE_ENV === "production" ? "https://groovin-project-3.herokuapp.com" : "http://localhost:3000"}/confirm_token/${confirmationToken.token}`
           );
         }
       });
